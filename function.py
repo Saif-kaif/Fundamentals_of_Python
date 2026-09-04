@@ -66,3 +66,55 @@ def evenodd(n):
     print('ODD')
 k=int(input('enter:'))
 evenodd(k)
+
+def printInfo(num1, num2):
+    print(f'We are adding {num1} and {num2}...')
+    return
+
+def addition(num1, num2):
+    """This function adds two numbers and returns the value"""
+    result = int(num1) + int(num2)
+    return result
+
+n1 = input('Enter number1: ')
+n2 = input('Enter number2: ')
+
+printInfo(n1, n2)
+res = addition(n1, n2)
+print('Result is:', res)
+
+def total_sum(*numbers):
+    print(sum(numbers))
+
+total_sum(10, 20, 30)  # Output: 60
+
+
+def show_info(**data):
+    print(data)
+
+show_info(name="Tania", age=22,village='tai')
+
+def an():
+  return "This function adds two numbers and returns the value"
+
+def  addition(num1, num2):
+  num1 = int(num1)
+  num2 = int(num2)
+  result = num1 + num2
+  return result
+
+print(an())
+print(addition(20,120))
+
+def maximum(a,b):
+  return max(a,b)
+print(maximum(10,2))
+
+def max_min_num(a, b):
+    if a > b:
+        return f"Max: {a}, Min: {b}"
+    else:
+        return f"Max: {b}, Min: {a}"
+
+# Example usage:
+print(max_min_num(300, 10000))
